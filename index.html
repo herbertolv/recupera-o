@@ -1,27 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        a:hover{
-            color: aqua;
-        }
-    </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formula 1</title>
 </head>
+
 <body>
-    <h1>Aluno1: Antonio Hilton Medeiro de Sousa Filho</h1>
-    <h1>Aluno2: Antonio Herbert Oliveira Silva</h1>
+    <nav class="navbar col-12 m-auto position-fixed navbar-dark bg-dark" style="z-index: 999;">
+      <div class="container-fluid col-11 m-auto">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      </a>
+      <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+      </ul>
+      <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </div>
+      </div>
+    </nav>
+    <br><br><br>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          <img src="imagens/f1-2020-xboxone-análise-xboxmania-formula1-capa.jpg" class="d-block w-100">
+          <div class="carousel-caption">
+          <h3>Pilotos de furmula 1</h3>
+          <p>Vettel, Lewis Hamilton, Max Verstappen, Daniel Ricciardo!</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/nba-plain--5a35d13f-c0ee-4740-bb0d-357b329fd4db.png" class="d-block w-100">
+            <div class="carousel-caption">
+            <h3>Abu Dhabi</h3>
+            <p>Max Verstappen venceu o Grande Prêmio de Abu Dhabi de Fórmula 1!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/fibl0-yxgamxwdp-1-1668964579115.jpg" class="d-block w-100">
+            <div class="carousel-caption">
+            <h3>Temporada da F1</h3>
+            <p>Verstappen conquista o GP de Abu Dhabi!</p>
+          </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    <ul>
-        <li><a href="ifpi.html">Questão 1</a></li>
-        <li><a href="enquete.html">Questão 2</a></li>
-        <li><a href="imagens.html">Questão 3</a></li>
-        <li><a href="index.html">Questão 4</a></li>
-    </ul>
+      <!-- Parte do google-->
 
+      <div class="container">
+        <h2>
+          <span class="letter-g">G</span>
+          <span class="letter-ol">o</span>
+          <span class="letter-o2">o</span>
+          <span class="letter-g2">g</span>
+          <span class="letter-l">l</span>
+          <span class="letter-e">e</span>
+        </h2>
+        <form action="https://www.google.com/search" method="GET" class="search-form">
+          <input type="text" name="q" class="search-input" placeholder="Digite sua pesquisa..." required>
+          <input type="submit" value="Pesquisa" class="search-button">
+        </form>
+      </div>
 
-    
-</body>
+      <div class="row row-cols-1 row-cols-md-2 g-4 col-9 m-auto">
+        <div class="col">
+          <div class="card">
+          <img src="imagens/f1.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">"História da Fórmula 1"</h5>
+          <p class="card-text">A Fórmula 1 (F1) foi criada pela Federação Internacional de Automobilismo (FIA) e surgiu, oficialmente, em 1950. A ideia era reunir todos os Grande Prêmios (GP) da Europa, que já aconteciam em países como Inglaterra, França, Itália, Mônaco, Suíça e Bélgica, e criar um campeonato unificado.</p>
+          <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Clica aqui em ver mais!
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="imagens/gettyimages-138972305.webp" class="card-img-top" alt="...">
+      <p>Em 1970, Colin Chapman revelou ao mundo sua mais nova joia: a Lotus modelo 72. O revolucionário carro tinha um conceito aerodinâmico totalmente diferente e o objetivo de aumentar a velocidade nas curvas. Na Espanha, Chapman só inscreveu o primeiro piloto Jochen Rindt com o 72. Depois, na Bélgica, o segundo piloto John Miles recebeu o 72, enquanto Rindt voltou ao antigo 49C. Nas três corridas seguintes, os dois usaram o 72, mas um terceiro carro, um modelo 49, foi entregue a um estreante chamado Emerson Fittipaldi, que o pilotou em três provas. Com a morte de Rindt em Monza e a aposentadoria repentina de Miles, Emerson e o novo companheiro Reine Wisell usaram o 72.</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+    </div>
+    </div>
+    </div>
+        <div class="col">
+        <div class="card">
+        <img src="imagens/1-juan-manuel-fangio.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">"Início da Fórmula 1"</h5>
+        <p class="card-text">"Nino Farina, Juan Manuel Fangio e Alberto Ascari, outro italiano, dominaram a Fórmula 1 no início da década de 1950. Farina foi o primeiro campeão, Ascari ganhou o campeonato em 1952 e 1953, de Ferrari, e o argentino Fangio levou o título em cinco oportunidades (1951, 1954, 1955, 1956 e 1957). Uma curiosidade sobre Fangio é que ele foi campeão pilotando por quatro equipes: Alfa Romeo, Maserati, Ferrari e Mercedes."</p>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card">
+          <img src="imagens/f2-2024-1iukfomaj3ghk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">F2 a nova geração chega em 2024</h5>
+          <p class="card-text">Desde quando a F1 mudou o regulamento em 2022, se perguntava quando as categorias de base viriam com seus carros novos. Especialmente a F2, ultima antes da F1, que vinha com o seu pacote técnico desde 2018, Mas a mudança do regulamento técnico da F1 acabou tornando a vinda de um novo carro para a categoria mais do que necessária. Afinal de contas, o F2 acabou sendo um monoposto bem diferente, o que tornaria a adaptação dos pilotos mais difícil em caso de subir de nível.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <hr>
+      <div class="col-11 m-auto">
+        <h2 class="text-center">Mundialmente</h2>
+        <p>"A Fórmula 1 é considerada a categoria mais importante do automobilismo mundial. Por ela, passaram nomes, como: Ayrton Senna, Michael Schumacher, Alain Prost, Nelson Piquet, Juan Manuel Fangio, Niki Lauda, Jackie Stewart, Jack Brabham e tantos outros pilotos de renome. Como em todo esporte a motor, na F1 os resultados dependem da combinação entre piloto e equipamento."</p>
+      </div>
+      <hr>
+      <div class="col-11 m-auto">
+        <h2 class="text-center">Site!</h2>
+        <div class=" m-auto" style="width: 80px;">
+        <a href="http://">
+        </a>
+      </div>
+      </div>  
+        <footer style="background-color: black;" class="page-footer font-small blue P-5">
+          <div class="text-center">
+          <a href="https://exame.com/noticias-sobre/formula-1/">Notícias sobre Fórmula 1</a>
+          </div>
+        </footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
